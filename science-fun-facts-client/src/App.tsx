@@ -1,8 +1,16 @@
 import React from 'react';
+import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // axios({
+  //   method: 'get',
+  //   url: 'url'
+  // }).then(function(response) {
+  //   console.log(response);
+  // });
+
   return (
     <div className="App">
       <header className="App-header">
