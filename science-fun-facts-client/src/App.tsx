@@ -1,22 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  // axios({
-  //   method: 'get',
-  //   url: 'url'
-  // }).then(function(response) {
-  //   console.log(response);
-  // });
+
+  const [facts, setFacts] = useState([]);
+
+  useEffect(() => {
+    axios({
+      method: 'get',
+      url: 'http://localhost:64120/get/facts'
+    }).then(function(response) {
+      console.log(response.data);
+    });
+  }, []);
+
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Random Science Facts API! (V1)
         </p>
         <a
           className="App-link"
