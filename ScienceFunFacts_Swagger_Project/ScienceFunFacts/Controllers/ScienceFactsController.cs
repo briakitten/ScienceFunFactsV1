@@ -12,14 +12,14 @@ using Swashbuckle.AspNetCore.Annotations;
 namespace ScienceFunFactsV1.Controllers
 {
     [Route("api/[controller]")]
-    public class SwaggerUIExampleController : Controller
+    public class ScienceFactsController : Controller
     {
         private static readonly IEnumerable<ScienceFact> Facts = new ScienceFact[]
         {
-            new ScienceFact("Fact1", "Some fact info", new string[] {"a link to somewhere", "another link"}),
-            new ScienceFact("Fact2", "Some more fact info", new string[] {"a link to somewhere", "another link"}),
-            new ScienceFact("Fact3", "Some other fact info", new string[] {"a link to somewhere", "another link"}),
-            new ScienceFact("Fact4", "Some... uh... more fact info", new string[] {"a link to somewhere", "another link"})
+            new ScienceFact("Space is BIG!", "Did you know the universe is at least 250 larger than the observable universe?", new string[] { "https://www.space.com/24073-how-big-is-the-universe.html", "https://nineplanets.org/questions/how-big-is-the-universe/"}),
+            new ScienceFact("2 is the only even prime number!", "Test it for yourself. 2 is divisible only by itself and one, all other even numbers are divisible by two.", new string[] { "https://byjus.com/questions/why-is-2-the-only-even-prime-number/"}),
+            new ScienceFact("The biggest robot as of April 2022 is 28 feet tall!", "It is so big, you have to take off its head to get it out of the warehouse.", new string[] {"https://supercarblondie.com/tech/worlds-biggest-robot-28-feet-tall-shoots-sponge-balls-87mph/"}),
+            new ScienceFact("An octopus has 9 brains!", "The majority of an octopuses neurons are spread out across its tentacles! As though they have 8 for each arm.", new string[] {"https://a-z-animals.com/blog/how-many-brains-does-an-octopus-have/"})
         };
 
         /// <summary>
