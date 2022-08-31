@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\Workspace_SukhpinderSingh\medium\SwaggerUI_CoreExample\SwaggerUI_CoreExample\SwaggerUI_CoreExample.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp3.1\</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 
